@@ -8,12 +8,10 @@ import {
   FaCss3,
   FaJs,
   FaReact,
- 
   FaFigma,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
- 
   SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
@@ -35,16 +33,20 @@ const aboutData: AboutData[] = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="nextjs" />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobexd" />,
+          <SiAdobephotoshop key="photoshop" />,
+        ],
       },
     ],
   },
@@ -75,9 +77,11 @@ const About = () => {
   console.log(index);
   return (
     <motion.div variants={fadeIn("right", 0.2)}
-    initial="hidden"
-    animate="show"
-    exit="hidden" className="h-full bg-primary/30 py-32 text-center lg:text-left ">
+      initial="hidden"
+      animate="show"
+      exit="hidden"
+      className="h-full bg-primary/30 py-32 text-center lg:text-left "
+    >
       <Circles />
 
       {/* avatar image */}
@@ -99,7 +103,7 @@ const About = () => {
               magnificent websites.
             </motion.h2>
             <motion.p className="max-w-[500px] mx-auto lg:mx-0 mb-6 lg:mb-12 px-2 lg:px-0">
-              10 years ago, I began freelancing as a developer. Since then, I've
+              10 years ago, I began freelancing as a developer. Since then, I&apos;ve
               done remote work for agencies.
             </motion.p>
           </div>
@@ -152,9 +156,7 @@ const About = () => {
                 {/* title */}
                 <div className="font-light mb-2 md:mb-0">
                   {item.title}
-                  {/* Conditionally render 'stage' if it exists */}
                   {"stage" in item && <div>{item.stage}</div>}
-                  {/* Conditionally render 'icons' if it exists */}
                   {"icons" in item && (
                     <div className="flex gap-x-4">
                       {item.icons.map((icon, iconIndex) => (
@@ -170,7 +172,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </motion.div >
+    </motion.div>
   );
 };
 
