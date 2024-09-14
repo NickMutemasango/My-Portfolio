@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 import {
   RxCrop,
-  RxPencil2,
+
   RxDesktop,
   RxReader,
   RxRocket,

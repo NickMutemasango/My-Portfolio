@@ -4,8 +4,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Layout from "../components/Layout";
-import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { AnimatePresence } from "framer-motion";
+
 import Transition from '../components/Transition';
 
 // Load custom fonts
@@ -28,7 +28,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const router = useRouter();
+  
   return (
     <html lang="en">
       {/* Ensure fonts are included here */}
