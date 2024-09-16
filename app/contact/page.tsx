@@ -17,11 +17,11 @@ const Contact = () => {
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px] ">
           {/* text */}
-          <h2 className="h2 text-center mb-12">
+          <h2 className="text-2xl md:h2 text-center mb-5 md:mb-10">
             Let&apos;s <span className="text-accent">connect.</span>
           </h2>
           {/* form */}
-          <form className="flex-1 flex flex-col gap-6 w-full mx-auto">
+          <form className="flex-1 flex flex-col gap-3 md:gap-6 w-full mx-auto">
             {/* input groups */}
             <div className="flex gap-x-6 w-full">
               <input type="text" placeholder="name" className="input" />

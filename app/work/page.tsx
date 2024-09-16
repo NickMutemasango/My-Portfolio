@@ -19,7 +19,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-12"
+              className="text-[24px] md:h2 xl:mt-12"
             >
               My Work <span className="text-accent">.</span>
             </motion.h2>
@@ -28,7 +28,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max:w-[400px] mx-auto lg:mx-0"
+              className="mb-4 text-xs md:text-base max:w-[400px] mx-auto lg:mx-0"
             >
              As a front-end developer, focusing on building functional and responsive web applications.
             </motion.p>

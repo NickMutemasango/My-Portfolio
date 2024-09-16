@@ -102,7 +102,7 @@ const About = () => {
               Captivating <span className="text-accent">stories</span> birth
               magnificent websites.
             </motion.h2>
-            <motion.p className="max-w-[500px] text-sm mx-auto lg:mx-0 mb-6 lg:mb-12 px-2 lg:px-0">
+            <motion.p className="max-w-[500px] text-smt md:text-lg mx-auto lg:mx-0 mb-6 lg:mb-12 px-2 lg:px-0">
               1 year ago, I began web developing.
             </motion.p>
           </div>
@@ -115,7 +115,7 @@ const About = () => {
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={1} duration={9} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
+                <div className="text-xs  tracking-[1px] leading-[1.4] max-w-[100px] ">
                   Year of experience
                 </div>
               </div>
@@ -123,7 +123,7 @@ const About = () => {
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={1} duration={9} />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
+                <div className="text-xs  tracking-[1px] leading-[1.4] max-w-[100px] ">
                   Satisfied customers
                 </div>
               </div>
@@ -153,13 +153,13 @@ const About = () => {
                 className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
               >
                 {/* title */}
-                <div className="font-light mb-2 md:mb-0">
+                <div className="font-light text-xs md:text-lg mb-2 md:mb-0">
                   {item.title}
                   {"stage" in item && <div>{item.stage}</div>}
                   {"icons" in item && (
                     <div className="flex gap-x-4">
                       {item.icons.map((icon, iconIndex) => (
-                        <div key={iconIndex} className="text-2xl text-white">
+                        <div key={iconIndex} className="text-[18px] md:text-2xl text-white">
                           {icon}
                         </div>
                       ))}
