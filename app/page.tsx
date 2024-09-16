@@ -11,7 +11,7 @@ const Home = () => {
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 ">
         <div className="text-center flex flex-col justify-center lg:pt-40 lg:text-left h-full container mx-auto ">
           {/* title */}
-          <h1 className="text-[30px] pb-3">
+          <h1 className="text-[30px] pb-3 md:h2">
             Transforming Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>
           </h1>
