@@ -19,22 +19,22 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: "Testing",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Ensures functionality, usability, and performance across different environments.",
   },
   {
     icon: <RxReader />,
     title: "Problem solving",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Identifying issues, analyzing solutions, and optimizing code efficiency.",
   },
   {
     icon: <RxRocket />,
     title: "Debugging",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Identifying and resolving code issues to ensure smooth application functionality.",
   },
   {
     icon: <RxDesktop />,
     title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Building applications, coding features, ensuring performance, and scalability.",
   },
  
 ];
