@@ -24,12 +24,12 @@ const Contact = () => {
           <form className="flex-1 flex flex-col gap-3 md:gap-6 w-full mx-auto">
             {/* input groups */}
             <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="name" className="input" />
-              <input type="email" placeholder="email" className="input" />
+              <input type="text" placeholder="name" className="input h-10 md:h-[46px]" />
+              <input type="email" placeholder="email" className="input h-10 md:h-[46px]" />
             </div>
-            <input type="text" placeholder="subject" className="input" />
-            <textarea placeholder="message" className="textarea"></textarea>
-            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group ">
+            <input type="text" placeholder="subject" className="input h-10 md:h-[46px]" />
+            <textarea placeholder="message" className="textarea h-28 md:h-44"></textarea>
+            <button className="btn rounded-full border border-white/50 max-w-[150px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group ">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500 ">
                 Let&apos;s talk
               </span>
