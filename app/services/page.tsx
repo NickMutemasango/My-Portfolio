@@ -18,7 +18,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="xl:h2 lg:text-[32px] lg:font-bold xl:mt-8"
+              className="md:h2 lg:text-[32px] lg:font-bold xl:mt-8"
             >
               My Services <span className="text-accent">.</span>
             </motion.h2>
@@ -27,7 +27,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max:w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max:w-[400px] text-sm md:text-2xl mx-auto lg:mx-0"
             >
               As a skilled developer, I offer comprehensive testing, debugging,
               and problem-solving services to ensure your website run
