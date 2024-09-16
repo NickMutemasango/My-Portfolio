@@ -103,7 +103,7 @@ const About = () => {
               magnificent websites.
             </motion.h2>
             <motion.p className="max-w-[500px] mx-auto lg:mx-0 mb-6 lg:mb-12 px-2 lg:px-0">
-              10 years ago, I began freelancing as a developer. Since then, I&apos;ve
+              1 year ago, I began freelancing as a developer. Since then, I&apos;ve
               done remote work for agencies.
             </motion.p>
           </div>

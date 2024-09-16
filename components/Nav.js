@@ -29,7 +29,7 @@ const Nav = () => {
   return (
     <nav className="flex flex-col items-center lg:justify-center  gap-y-4 fixed h-max bottom-0 mt-auto lg:right-[2%] z-50 top-0 w-full lg:w-16 lg:max-w-md lg:h-screen ">
       {/* inner */}
-      <div className="flex w-full lg:flex-col items-center justify-between lg:justify-center gap-y-10 px-4 md:px-40 lg:px-0 h-[80px] bg-white/10 lg:h-max py-8 backdrop-blur-sm text-3xl lg:text-xl lg:rounded-full ">
+      <div className="flex w-full lg:flex-col items-center justify-between lg:justify-center gap-y-10 px-4 md:px-40 lg:px-0 h-[50px] bg-white/10 lg:h-max py-4 backdrop-blur-sm text-[18px] md:text-2xl lg:text-xl lg:rounded-full ">
         {navData.map((link, index) => {
           return (
             <Link
