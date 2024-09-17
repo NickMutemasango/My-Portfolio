@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import {
-  RiFacebookLine,
+  RiGithubLine,
   RiLinkedinLine,
   RiWhatsappLine,
 
@@ -16,8 +16,8 @@ const Socials = () => {
       <Link href='https://www.linkedin.com/in/nick-mutemasango-8847692ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' className="hover:text-accent transition-all duration-300 ">
       <RiLinkedinLine/>
       </Link>
-      <Link href='https://www.facebook.com/profile.php?id=100055052563623' className="hover:text-accent transition-all duration-300 ">
-      <RiFacebookLine/>
+      <Link href='https://github.com/NickMutemasango?tab=repositories' className="hover:text-accent transition-all duration-300 ">
+      <RiGithubLine/>
       </Link>
 
     </div>

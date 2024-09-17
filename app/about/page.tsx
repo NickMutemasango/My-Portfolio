@@ -3,18 +3,8 @@
 import React, { useState } from "react";
 
 // icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-} from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from "react-icons/fa";
+import { SiNextdotjs, SiAdobexd, SiAdobephotoshop } from "react-icons/si";
 
 // Define the types for aboutData
 type InfoItem =
@@ -53,10 +43,10 @@ const aboutData: AboutData[] = [
   {
     title: "experience",
     info: [
-      {
-        title: "UX/UI Designer - Uncommon.org",
-        stage: "February - March",
-      },
+      // {
+      //   title: "UX/UI Designer - Uncommon.org",
+      //   stage: "February - March",
+      // },
       {
         title: "Web Developer - Uncommon.org",
         stage: "2024 - Present",
@@ -76,7 +66,8 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <motion.div variants={fadeIn("right", 0.2)}
+    <motion.div
+      variants={fadeIn("right", 0.2)}
       initial="hidden"
       animate="show"
       exit="hidden"
@@ -102,16 +93,20 @@ const About = () => {
               Captivating <span className="text-accent">stories</span> birth
               magnificent websites.
             </motion.h2>
-            <motion.p className="max-w-[500px] text-smt md:text-lg mx-auto lg:mx-0 mb-6 lg:mb-12 px-2 lg:px-0">
-              1 year ago, I began web developing.
+            <motion.p className="max-w-[500px] text-sm md:text-lg mx-auto lg:mx-0 mb-6 mt-5 lg:mb-12 px-2 lg:px-0">
+              I am a front-end developer with experience in building dynamic and
+              responsive web applications. My expertise includes HTML, CSS, and
+              JavaScript for creating visually appealing and user-friendly
+              interfaces. I have hands-on experience with Next.js, which I use
+              to build high-performance React applications.
             </motion.p>
           </div>
 
           {/* counters */}
-          <div>
-            <div className="flex">
-              {/* experience */}
-              <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+          {/* <div>
+            <div className="flex"> */}
+          {/* experience */}
+          {/* <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={1} duration={9} />
                 </div>
@@ -128,7 +123,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-col w-[50%] h-[480px] justify-center pt-4 md:pt-0">
@@ -159,7 +154,10 @@ const About = () => {
                   {"icons" in item && (
                     <div className="flex gap-x-4">
                       {item.icons.map((icon, iconIndex) => (
-                        <div key={iconIndex} className="text-[18px] md:text-2xl text-white">
+                        <div
+                          key={iconIndex}
+                          className="text-[18px] md:text-2xl text-white"
+                        >
                           {icon}
                         </div>
                       ))}
