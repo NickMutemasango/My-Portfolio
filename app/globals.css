@@ -49,3 +49,22 @@
     }
   }
   
+
+  .swiper-pagination {
+    bottom: 10px; /* Adjust position as needed */
+  }
+  
+  .swiper-pagination-bullet {
+    background: #fff; /* Set bullet color */
+    opacity: 0.7; /* Slight transparency */
+    width: 12px; /* Adjust size */
+    height: 12px; /* Adjust size */
+    margin: 0 4px; /* Space between bullets */
+    border-radius: 50%; /* Make them circular */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #ff4081; /* Set active bullet color */
+    opacity: 1; /* Fully opaque */
+  }
+  

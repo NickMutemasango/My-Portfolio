@@ -16,6 +16,7 @@ import { BsArrowRight } from "react-icons/bs";
 const workSlider = {
   slides: [
     {
+      
       images: [
         {
           title: "VanLife",
