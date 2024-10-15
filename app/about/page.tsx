@@ -2,14 +2,12 @@
 
 import React, { useState } from "react";
 
-// icons
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from "react-icons/fa";
 import { SiNextdotjs, SiAdobexd, SiAdobephotoshop } from "react-icons/si";
 
-// Define the types for aboutData
 type InfoItem =
-  | { title: string; icons: JSX.Element[] } // for skills section
-  | { title: string; stage: string }; // for experience section
+  | { title: string; icons: JSX.Element[] } 
+  | { title: string; stage: string }; 
 
 interface AboutData {
   title: string;
@@ -71,7 +69,7 @@ const About = () => {
       initial="hidden"
       animate="show"
       exit="hidden"
-      className="h-full bg-primary/30 py-32 text-center lg:text-left "
+      className=" bg-primary/30 py-32 text-center lg:text-left "
     >
       <Circles />
 
@@ -86,7 +84,7 @@ const About = () => {
         <Avatar />
       </motion.div>
 
-      <div className="container mx-auto h-full flex flex-col items-center lg:flex-row gap-x-6 ">
+      <div className="container mx-auto  flex flex-col items-center lg:flex-row gap-x-6 ">
         <div className="flex flex-col justify-center ">
           <div>
             <motion.h2 className="text-[26px] md:h2">
@@ -101,32 +99,9 @@ const About = () => {
               to build high-performance React applications.
             </motion.p>
           </div>
-
-          {/* counters */}
-          {/* <div>
-            <div className="flex"> */}
-          {/* experience */}
-          {/* <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={1} duration={9} />
-                </div>
-                <div className="text-xs  tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Year of experience
-                </div>
-              </div>
-              <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={1} duration={9} />
-                </div>
-                <div className="text-xs  tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Satisfied customers
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
 
-        <div className="flex flex-col w-[50%] h-[480px] justify-center pt-4 md:pt-0">
+        <div className="flex flex-col w-[50%] pb-[480px] justify-center pt-4 md:pt-0">
           <div className="flex gap-x-4 lg:gap-x-6 xl:gap-x-8 mx-auto lg:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => (
               <div
