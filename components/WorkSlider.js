@@ -92,7 +92,7 @@ const WorkSlider = () => {
                   >
                     <div className="flex items-center justify-center relative overflow-hidden">
                       {/* images */}
-                      <Image src={image.path} width={300} height={100} alt={image.title} />
+                      <Image src={image.path} width={500} height={500} alt={image.title} />
 
                       {/* overlay gradient */}
                       <div className="absolute inset-0 bg-purple-900 opacity-0 group-hover:opacity-80 transition-all duration-700"></div>

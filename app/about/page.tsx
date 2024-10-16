@@ -101,7 +101,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col w-[50%] pb-[480px] justify-center pt-4 md:pt-0">
+        <div className="flex flex-col w-[50%] pb-[480px] md:pb-0 md:h-[480px] justify-center pt-4 md:pt-0">
           <div className="flex gap-x-4 lg:gap-x-6 xl:gap-x-8 mx-auto lg:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => (
               <div
