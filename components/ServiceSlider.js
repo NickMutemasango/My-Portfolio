@@ -41,19 +41,19 @@ const serviceData = [
 const ServiceSlider = () => {
   // Slick slider settings
   const settings = {
-    dots: true,  // Show pagination dots
-    infinite: true,  // Infinite scrolling
-    speed: 500,  // Transition speed
-    slidesToShow: 3,  // Number of slides to show at a time
-    slidesToScroll: 1,  // Number of slides to scroll
-    autoplay: true,  // Enable autoplay
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false,  // Autoplay speed in milliseconds (3 seconds)
+    arrows: false,
     responsive: [
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 1,  // Show 1 slide on small screens
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -61,11 +61,11 @@ const ServiceSlider = () => {
   };
 
   return (
-    <Slider {...settings} className="h-[240px]  sm:h-[340px]">
+    <Slider {...settings} className="h-[240px] sm:h-[340px]">
       {serviceData.map((item, index) => {
         return (
-          <div key={index} className="mr-3">
-            <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-4 md:py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 ">
+          <div key={index} className="px-2"> {/* Add padding here */}
+            <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-4 md:py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
               {/* icon */}
               <div className="text-[20px] md:text-4xl text-accent mb-4">{item.icon}</div>
               {/* title and desc */}
@@ -84,5 +84,6 @@ const ServiceSlider = () => {
     </Slider>
   );
 };
+
 
 export default ServiceSlider;

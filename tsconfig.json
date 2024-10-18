@@ -21,6 +21,15 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/about/page.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "pages/about/page.tsx",
+    "app/contact/page.js",
+    "components/Projects.js",
+    "components/WorkSlider.js"
+  ],
   "exclude": ["node_modules"]
 }

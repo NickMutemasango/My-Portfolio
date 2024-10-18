@@ -1,126 +1,41 @@
-"use client"
+// "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
+// import React, { useState } from "react";
 
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+// import GamerParadise from "../public/five.png";
+// import Gamer from "../public/five.png";
+// import TravelBuddy from "../public/five.png";
 
 
-import { Pagination } from "swiper";
+// const Page = () => {
+//   // State to track the current slide
+//   const [currentIndex, setCurrentIndex] = useState(0);
 
-import { BsArrowRight } from "react-icons/bs";
+//   // Array of Projects components
+//   const slides = [
+//     {
+//       image: TravelBuddy,
+//       description:
+//         "Travel Buddy is a user-friendly travel website offering curated recommendations for top places to visit, along with various travel-related services. It helps users explore destinations, discover hidden gems and plan their trips efficiently, providing a seamless travel experience for adventurers",
+//     },
+//     {
+//       image: Gamer,
+//       description:
+//         "Gamer is an engaging platform for gaming enthusiasts, providing insights and reviews about the latest games.",
+//     },
+//     {
+//       image: GamerParadise,
+//       description:
+//         "Gamer Paradise is a dynamic website designed for gaming enthusiasts. It offers a rich collection of game reviews, news, and guides, delivering a comprehensive gaming experience. The site features an engaging, interactive design, providing users with the latest updates from the gaming world.",
+//     },
+//   ];
 
-// data
-const workSlider = {
-  slides: [
-    {
-      
-      images: [
-        {
-          title: "VanLife",
-          path: "/one.svg",
-          url: "https://van-life-complete.vercel.app",
-        },
-        {
-          title: "Air-bnb",
-          path: "/two.svg",
-          url: "https://air-bn-b-pi.vercel.app/",
-        },
-        {
-          title: "build products",
-          path: "/three.svg",
-          url: "https://nickmutemasango.github.io/First-Tailwind-Project/",
-        },
-        {
-          title: "bussinessCards",
-          path: "/four.svg",
-          url: "https://business-cards-snowy.vercel.app/",
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "Wildlife",
-          path: "/five.svg",
-          url: "https://nickmutemasango.github.io/Third-project-Nyamatusi-/",
-        },
-        {
-          title: "travel journal",
-          path: "/six.svg",
-          url: "https://travel-journal-smoky-ten.vercel.app/",
-        },
-        {
-          title: "  Upcomming",
-          path: "/thumb2.jpg",
-          url: "",
-        },
-        {
-          title: "Upcomming",
-          path: "/thumb3.jpg",
-          url: "",
-        },
-      ],
-    },
-  ],
-};
+//   // Function to go to the next slide
 
-const WorkSlider = () => {
-  return (
-    <Swiper
-      spaceBetween={10}
-      pagination={{
-        clickable: true,
-      }}
-      modules={{ Pagination }}
-      className="h-[280px] sm:h-[480px]"
-    >
-      {workSlider.slides.map((slide, index) => {
-        return (
-          <SwiperSlide key={index}>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
-              {slide.images.map((image, index) => {
-                return (
-                  <a
-                    key={index}
-                    href={image.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
-                  >
-                    <div className="flex items-center justify-center relative overflow-hidden">
-                      {/* images */}
-                      <Image src={image.path} width={500} height={500} alt={image.title} />
 
-                      {/* overlay gradient */}
-                      <div className="absolute inset-0 bg-purple-900 opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
-                      {/* title */}
-                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:lg:-translate-y-20 transition-all duration-300">
-                        <div className="flex items-center gap-x-2 text-[8px] md:text-[13px] tracking-[0.2em]">
-                          {/* title part 1 */}
-                          <div className="delay-100">LIVE</div>
-                          {/* title part 2 */}
-                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                            PROJECT
-                          </div>
-                          {/* icon */}
-                          <div className="text-base md:text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
-                            <BsArrowRight />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                );
-              })}
-            </div>
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
-  );
-};
+//   return (
+ 
+//   );
+// };
 
-export default WorkSlider;
+// export default Page;

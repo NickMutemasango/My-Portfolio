@@ -63,3 +63,29 @@
     }
   }
   
+
+  .image-container {
+    overflow: hidden;
+  }
+  
+  .image {
+ 
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .slider-slide {
+    margin: 0 5px; /* Adjust the value for desired spacing */
+  }
+  
