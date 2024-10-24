@@ -78,7 +78,7 @@ const Contact = () => {
             </div>
             <input name="subject" type="text" placeholder="subject" className="input h-10 md:h-[46px]" required />
             <textarea name="message" placeholder="message" className="textarea h-28 md:h-44" required></textarea>
-            <button onClick={onSubmit} className="btn rounded-full border border-white/50 max-w-[150px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group ">
+            <button className="btn rounded-full border border-white/50 max-w-[150px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group ">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500 ">
                 Let&apos;s talk
               </span>

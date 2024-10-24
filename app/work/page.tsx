@@ -11,6 +11,7 @@ import Manage from "../../public/bring.png";
 import Nyamatusi from "../../public/nyama.png";
 import Air from "../../public/air.png";
 import Travel from "../../public/travel.png";
+import Jordan from '../../public/jordan.png'
 import { RxDoubleArrowLeft, RxDoubleArrowRight } from "react-icons/rx";
 
 const Work = () => {
@@ -20,6 +21,7 @@ const Work = () => {
     { image: Air, alt: "vanlife", link: "https://air-bn-b-pi.vercel.app" },
     { image: Travel, alt: "vanlife", link: "https://travel-journal-smoky-ten.vercel.app" },
     { image: Manage, alt: "vanlife", link: "https://nickmutemasango.github.io/First-Tailwind-Project/" },
+    { image: Jordan, alt: "jordan", link: "https://jordan-azure.vercel.app" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

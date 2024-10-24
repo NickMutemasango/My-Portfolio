@@ -1,5 +1,4 @@
-"use client"; // Add this at the top to mark this as a Client Component
-
+"use client"; // This is still a client component
 
 import localFont from "next/font/local";
 import "./globals.css";
@@ -21,9 +20,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -39,9 +35,8 @@ export default function RootLayout({
         {/* Layout inside body */}
         <Layout>
           <AnimatePresence mode="wait">
-         
-              <Transition />
-              {children}
+            <Transition />
+            {children}
           </AnimatePresence>
         </Layout>
       </body>
