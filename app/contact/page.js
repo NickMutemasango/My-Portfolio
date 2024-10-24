@@ -34,29 +34,7 @@ const Contact = () => {
     }
   };
 
-  const onSubmit = async () => {
-    setState((prev) => ({
-      ...prev,
-      isLoading: true,
-    }));
-    try {
-      await sendContactForm(values);
-      setTouched({});
-      setState(initState);
-      toast({
-        title: "Message sent.",
-        status: "success",
-        duration: 2000,
-        position: "top",
-      });
-    } catch (error) {
-      setState((prev) => ({
-        ...prev,
-        isLoading: false,
-        error: error.message,
-      }));
-    }
-  };
+
 
   return (
     <motion.div
