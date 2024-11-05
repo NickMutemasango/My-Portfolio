@@ -17,7 +17,7 @@ const Home = () => {
           </h1>
           {/* subtitle */}
           <p className="text-xs md:text-base max-w-sm lg:max-w-xl mx-auto lg:mx-0 mb-10 lg:mb-5 xl:mb-16">
-            Skilled frond-end developer with a strong foundation in coding,
+            Skilled front-end developer with a strong foundation in coding,
             debugging, testing, and problem-solving. Adept at writing clean,
             efficient code and identifying and resolving issues in both
             front-end and back-end.
