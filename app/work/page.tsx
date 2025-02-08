@@ -20,12 +20,12 @@ const Work = () => {
   const slides = [
     { image: Vanlife, alt: "vanlife", link: "https://van-life-complete.vercel.app" },
     { image: Nyamatusi, alt: "nyamatusi", link: "https://nickmutemasango.github.io/Third-project-Nyamatusi-/" },
-    { image: Jordan, alt: "jordan", link: "https://jordan-azure.vercel.app" },
-    { image: Food, alt: "food", link: "https://food-delivery-chi-blush.vercel.app/" },
-    { image: Humanity, alt: "humanity", link: "https://humanity-5xur.vercel.app/" },
+    { image: Jordan, alt: "jordan", link: "https://jordan-azure.vercel.app" }, 
     { image: Manage, alt: "manage", link: "https://nickmutemasango.github.io/First-Tailwind-Project/" },
     { image: Air, alt: "air-bnb", link: "https://air-bn-b-pi.vercel.app" },
     { image: Travel, alt: "travel", link: "https://travel-journal-smoky-ten.vercel.app" },
+    { image: Food, alt: "food", link: "https://food-delivery-chi-blush.vercel.app/" },
+    { image: Humanity, alt: "humanity", link: "https://humanity-5xur.vercel.app/" },
    
    
   ];
